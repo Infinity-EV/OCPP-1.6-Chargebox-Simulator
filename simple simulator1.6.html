@@ -450,7 +450,7 @@
             transactionId: Number($("#transactionId").val()),
             idTag: $("#TAG").val(),
             timestamp: formatDate(new Date()),
-            meterStop: 20,
+            meterStop: Number($("#metervalue").val()),
           },
         ]);
         _websocket.send(stpT);
